@@ -7,30 +7,18 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <!-- Header content goes here -->
-    </header>
-    
-    <nav>
-        <!-- Navigation bar content goes here -->
-        <div class="container teal borderYtoX">
-            <a href="index.html">HOME</a>
-            <a href="blog.html">BLOG</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
-    </nav>
-       
+    <div id="header"></div>  <!-- div that instruct the javascript where to place the header.html -->
+    <div id="navigation"></div>  <!-- div that instruct the javascript where to place the navigation.html -->     
     <main>
         <!-- Page-specific content goes here -->
         <h1>Welcome to my final project home page</h1>
         <button onclick="showAlert()">Click me</button>
         <main class="flex-container">
     </main>
+    <div id="footer"></div>  <!-- div that instruct the javascript where to place the footer.html -->
     
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
+    <script>
+        includeHTML(); <!-- javascript that integrates the reusable code into the new page -->
+    </script>
 </body>
 </html>
