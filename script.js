@@ -9,19 +9,19 @@ function includeHTML() {
     const footerContainer = document.getElementById("footer");
     const navigationContainer = document.getElementById("navigation");
   
-    fetch("header.html")
+    fetch("template/header.html")
       .then(response => response.text())
       .then(html => {
         headerContainer.innerHTML = html;
       });
   
-    fetch("footer.html")
+    fetch("template/footer.html")
       .then(response => response.text())
       .then(html => {
         footerContainer.innerHTML = html;
       });
   
-    fetch("navigation.html")
+    fetch("template/navigation.html")
       .then(response => response.text())
       .then(html => {
         navigationContainer.innerHTML = html;
